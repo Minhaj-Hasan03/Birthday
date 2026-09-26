@@ -28,6 +28,10 @@ app.use(
   birthdayMessageRouter
 );
 
+app.get("/", (req, res) => {
+  res.send("Birthday Backend API is running");
+});
+
 app.listen(port, ()=>{
     connectDb();
     console.log( `server is connected in port ${port}`)
