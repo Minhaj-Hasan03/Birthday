@@ -9,25 +9,86 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "PP Neue Montreal", sans-serif;
   background: var(--light);
+  color: var(--dark);
 }
 
-img {
+img,
+video {
   display: block;
   max-width: 100%;
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  outline: none;
+}
+
 #root {
   width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #root {
+    overflow-x: hidden;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
 }
