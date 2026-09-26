@@ -6,7 +6,7 @@ import HorizontalScroll from "./components/HorizontalScroll";
 import Outro from "./components/Outro";
 
 import { initBirthdayAnimations } from "./animations/birthdayAnimations";
-import BirthdayMessage from "./components/BirthdayMessage";
+
 
 function App() {
   useEffect(() => {
@@ -29,7 +29,7 @@ function App() {
 
         <Outro />
 
-        <BirthdayMessage/>
+     
       </div>
     </main>
   );
